@@ -5,7 +5,7 @@ import loading from './loading'
 import Link from 'next/link'
 const prisma = new PrismaClient()
 
-const Page = async ({params}) => {
+const Page = async ({params}:{params:any}) => {
 
    console.log(params)
    const fetchContact = async ()=>{
